@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(6, 6, 63);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#titleT{
+    color: lightblue;
+}
+
+#titleB{
+   color: white; 
+}
+
+#generaPasswordButton{
+    color: navy;
+    font-size: 25px;
+    background-color: rgb(36, 160, 36);
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.choices{
+  display: inline;
+}
+
+input[ type="radio"]{
+    appearance: none;
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="radio"]:after{
+    content: '';
+    height: 9px;
+    width: 9px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: gray;
+    display: none; 
+}
+input[type="radio"]:checked{
+    border: 1px solid gray;
+    background-color: rgb(6, 6, 63) ;
+}
+input[type="radio"]:checked:after{
+    display: block;
+}
+
+
+input[ type="checkbox"]{
+    
+    appearance: none;
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:after{
+    content: '\2713';
+    font-size: 12px;
+    font-weight:bold;
+    color: rgb(6, 6, 63);
+    display: none;
+    
+}
+input[type="checkbox"]:checked{
+    background-color: gray;
+}
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+#passwordDispaly{
+    background-color: white;
+    height: 2rem;
+    
+}
